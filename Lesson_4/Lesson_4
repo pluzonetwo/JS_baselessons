@@ -1,0 +1,74 @@
+'use strict'
+/*var car = {
+    make: "Audi",
+    model: "A5",
+    year: 2015,
+    color: "red",
+    passengers: 2,
+    power: 225,
+    odometer: 0,
+    engineIsStarted: false,
+    startEngine: function() {
+        this.engineIsStarted = true;
+    },
+    stopEngine: function() {
+        this.engineIsStarted = false;
+    },
+    haveRoadTrip: function(distance) {
+        if (this.engineIsStarted) {
+            this.odometer += distance;
+        } else {
+            console.log("Сначала запустите двигатель!");
+        }
+    }
+};
+car.haveRoadTrip(200);
+console.log(car.odometer);*/
+
+/*const basket = {
+    goods: [
+        {
+            product_id: 111,
+            product_name: 'Notebook',
+            price: 20000,
+            quantity: 5,
+        },
+        {
+            product_id: 222,
+            product_name: 'Mouse',
+            price: 1000,
+            quantity: 10,
+        },
+        {
+            product_id: 333,
+            product_name: 'Gamepad',
+            price: 10000,
+            quantity: 1,
+        }
+    ],
+    countBasketPrice() {
+        return this.goods.reduce((totalPrice, cartItem) => totalPrice + cartItem.price, 0);
+    }
+};
+
+console.log(basket.countBasketPrice());*/
+
+function giveMePower(num) {
+    if (!Number.isInteger(num) || num < 0 || num > 999) {
+        console.log('Нормально делай!');
+        return {};
+    }
+
+    return {
+        firstDigit: num % 10,
+        secondDigit: Math.floor(num / 10) % 10,
+        thirdDigit: Math.floor(num / 100),
+    };
+}
+console.log(giveMePower(512));
+
+
+
+
+
+
