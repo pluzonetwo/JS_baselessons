@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>My Page</title>
+</head>
+<body>
+
+<div id="test">
+    <h1>Lorem ipsum dolor</h1>
+    <h2 id="div1">Some data in div-1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, sit?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, sit?</p>
+    <h2 id="div2">Another data in div-2</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, sit?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, sit?</p>
+    <h2 id="div3">Anything else in div-3</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, sit?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, sit?</p>
+</div>
+<!--<a href="#" onclick="alert('Hello!')">Link</a>-->
+<!--<a href="#" onclick="sayHello()">Link</a>-->
+<a href="#">Link</a>
+<script>
+    "use strict";
+    // const a = document.querySelector('a');
+    // function sayHello() {
+    //     alert('Hello!');
+    // }
+    // function sayBue(){
+    //     alert('Bye!')
+    // }
+/*    function sayHelloAndBuy(){
+        sayHello();
+        sayBue();
+    }
+    a.onclick = sayHelloAndBuy;*/
+
+    // a.addEventListener('click', sayHello);
+    // a.addEventListener('click', sayBue);
+    // a.removeEventListener("click", sayHello);
+
+    // document.addEventListener('DOMContentLoaded', function () {
+    //     alert('DOMContentLoaded');
+    // });
+    //
+    // window.addEventListener('load', function () {
+    //     alert(123);
+    // });
+    //
+    // window.addEventListener('beforeunload', function (){
+    //     alert('before');
+    // });
+
+    /*getElementsByClassName - возвращает элементы с именем класса
+    getElementsByTagName - с именем тега*/
+    /*    function my_initiation() {
+            var content2 = document.getElementById("div2");
+            content2.innerHTML = "Новая инфа";
+        }
+        window.onload = my_initiation;*/
+
+    /*    var div = document.createElement("div");
+        div.className = "my_div";
+        div.innerHTML = "<h1>Заголовок</h1><p>Содержимое</p>";
+        test.appendChild(div); /!*- вставляет элемент в конце*!/!*!/
+        /!*test.insertBefore(div, test.children[1]); - вставляет элемент после указанного элемента*!/
+        div.setAttribute("title", "My title");
+        div.style.color = "blue";*/
+
+    /*console.log(document.querySelector('.class')) - находит первый элемент по классу*/
+    /*console.log(document.querySelector('.class:last-child')) - находит последний элемент по классу*/
+    /*console.log(document.querySelectorAll('.class')) - находит все элементы по классу*/
+
+    // const pTags = document.querySelectorAll('p');
+    // pTags.forEach(element => console.log(element));
+/*    const pTags = document.getElementsByTagName('p');
+    for (let i = 0; i < pTags.length; i++) {
+        console.log(pTags[i]);
+    }*/
+/*    for (const key in pTags) {
+        console.log(pTags[key]);
+    }*/
+/*    for (const val of pTags) {
+        console.log(val);
+    }*/
+    // const h1Tag = document.querySelector('h1')
+    // console.log(h1Tag.textContent);
+    // textContent - показывает текст элемента (innerText, innerHTML - то же самое)
+    // h1Tag.innerHTML += "<i>!!!</i>";
+    // h1Tag.textContent += '!!!';
+
+    // h1Tag.style.color = 'red';
+    // console.log(h1Tag.style);
+    // console.log(getComputedStyle(h1Tag).color); - функция, которая возвращает список всех возможных свойств и значений примененных
+
+    /*Создаем элемент и добавляем его в дерево (простая вставка)
+    const myDiv = document.createElement('div');
+    const i = document.createElement('i');
+    i.textContent = 'Hello!';
+
+    myDiv.appendChild(i);
+    document.body.appendChild(myDiv);*/
+
+/*    Создаем элемент и добавляем его в дерево (сложная вставка, метод предпочтительнее)
+    document.querySelector('body').insertAdjacentHTML("beforebegin", "<div><i>Hello!</i></div>");
+    document.querySelector('body').insertAdjacentHTML("afterbegin", "<div><i>Hello!</i></div>");
+    document.querySelector('body').insertAdjacentHTML("afterend", "<div><i>Hello!</i></div>");
+    document.querySelector('body').insertAdjacentHTML("beforeend", "<div><i>Hello!</i></div>");*/
+
+    // const h1Tags = document.querySelector('h1').cloneNode(true); - клонирует узел;
+
+    /*Удалить тег из разметки (при этом его можно вернуть)
+    const h1Tags = document.querySelector('h1');
+    h1Tags.remove();*/
+
+
+
+
+
+</script>
+</body>
+</html>
